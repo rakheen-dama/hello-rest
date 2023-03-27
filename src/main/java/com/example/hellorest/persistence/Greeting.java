@@ -32,7 +32,6 @@ public class Greeting extends Auditable {
 
     public static Greeting fromNewGreeting(NewGreeting newGreeting) {
         var greeting = new Greeting();
-        greeting.setId(1l);
         greeting.setGreeting(newGreeting.greeting());
         greeting.setLanguage(newGreeting.language());
         greeting.setContinent(newGreeting.continent());
